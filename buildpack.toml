@@ -2,7 +2,7 @@ api = "0.2"
 
 [buildpack]
   homepage = "https://github.com/paketo-buildpacks/go"
-  id = "paketo-buildpacks/go"
+  id = "cirocosta/go"
   name = "Paketo Go Buildpack"
 
 [metadata]
@@ -15,8 +15,9 @@ api = "0.2"
     version = "0.2.5"
 
   [[order.group]]
-    id = "paketo-buildpacks/go-mod-vendor"
-    version = "0.0.169"
+    id = "cirocosta/go-mod-vendor"
+    image = "harbor-repo.vmware.com/tanzu_delivery_pipeline/go-mod-vendor:0.0.4"
+    version = "0.0.4"
 
   [[order.group]]
     id = "paketo-buildpacks/go-build"
